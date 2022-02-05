@@ -1,0 +1,155 @@
+body {
+  margin: auto;
+  padding-top: 18%;
+  background-color: hsl(210, 46%, 95%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "imagem texto texto"
+    "imagem texto texto"
+    "imagem informacao-pessoal button-share";
+  grid-template-columns: 350px 350px 300px;
+  grid-template-rows: 140px 140px 85px;
+  background-color: white;
+  width: 1000px;
+  height: auto;
+
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px hsl(210, 1%, 64%);
+}
+
+.container-informacao {
+  width: 48.2vw;
+  height: 140vh;
+
+  margin-left: 34px;
+  padding: 30px;
+  padding-left: 60px;
+}
+
+#img-lateral {
+  grid-area: imagem;
+  width: 30vw;
+  height: 40vh;
+
+  border-radius: 20px 0 0 20px;
+}
+
+#texto {
+  height: 250px;
+  width: 450px;
+  grid-area: texto;
+
+  font-size: large;
+}
+
+#texto span {
+  font-size: 26px;
+}
+
+#texto p {
+  color: hsl(214, 17%, 51%);
+  margin-top: 10px;
+}
+
+.container-info-button {
+  display: flex;
+}
+
+#informacao-pessoal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 30vw;
+  grid-area: informacao-pessoal;
+}
+
+#informacao-pessoal img {
+  height: 55px;
+  border-radius: 100px;
+}
+
+.informacao-pessoal-texto {
+  margin-left: 20px;
+  color: hsl(212, 23%, 69%);
+}
+#button-share {
+  background-color: hsl(212, 23%, 69%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+}
+
+#button-share img {
+  width: 20px;
+  height: 20px;
+  padding-top: 6px;
+  padding-left: 8px;
+}
+
+#attribution {
+  font-size: 11px;
+  text-align: left;
+
+  position: absolute;
+  top: 870px;
+  left: 500px;
+}
+
+#attribution a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.balao {
+  background: hsl(217, 19%, 35%);
+  border-radius: 15px;
+  width: 250px;
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+
+  position: relative;
+  top: 200px;
+  left: 5px;
+}
+
+.balao:after {
+  content: "";
+
+  width: 0;
+  height: 0;
+
+  position: absolute;
+
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid hsl(217, 19%, 35%);
+
+  bottom: -15px;
+  left: 45%;
+}
+
+.balao img {
+  width: 25px;
+  height: 25px;
+}
+
+.balao p {
+  color: hsl(212, 23%, 69%);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
