@@ -20,7 +20,7 @@ main {
   background-color: white;
   width: 1000px;
   height: auto;
-
+  position: relative;
   border-radius: 20px;
   box-shadow: 5px 5px 5px hsl(210, 1%, 64%);
 }
@@ -28,7 +28,6 @@ main {
 .container-informacao {
   width: 48.2vw;
   height: 140vh;
-
   margin-left: 34px;
   padding: 30px;
   padding-left: 60px;
@@ -38,7 +37,6 @@ main {
   grid-area: imagem;
   width: 30vw;
   height: 40vh;
-
   border-radius: 20px 0 0 20px;
 }
 
@@ -67,7 +65,7 @@ main {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
-  width: 30vw;
+  width: 35vw;
   grid-area: informacao-pessoal;
 }
 
@@ -77,9 +75,10 @@ main {
 }
 
 .informacao-pessoal-texto {
-  margin-left: 20px;
+  margin-left: 15px;
   color: hsl(212, 23%, 69%);
 }
+
 #button-share {
   background-color: hsl(212, 23%, 69%);
   width: 35px;
@@ -97,7 +96,6 @@ main {
 #attribution {
   font-size: 11px;
   text-align: left;
-
   position: absolute;
   top: 870px;
   left: 500px;
@@ -116,28 +114,22 @@ main {
   height: 60px;
   padding-left: 15px;
   padding-right: 15px;
-
   display: none;
   justify-content: space-around;
   align-items: center;
-
   position: relative;
   top: 200px;
-  left: 5px;
+  left: 70px;
 }
 
 .balao:after {
   content: "";
-
   width: 0;
   height: 0;
-
   position: absolute;
-
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-top: 15px solid hsl(217, 19%, 35%);
-
   bottom: -15px;
   left: 45%;
 }
