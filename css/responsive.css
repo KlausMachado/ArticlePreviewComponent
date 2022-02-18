@@ -4,13 +4,15 @@
     justify-content: center;
     align-items: center;
     width: 438px;
-    height: 760px;
+    height: 735px;
     position: relative;
   }
 
   #img-lateral {
     width: 438px;
+    height: 55vh;
     border-radius: 20px 20px 0 0;
+    margin-bottom: 20px;
   }
 
   .container-informacao {
@@ -41,10 +43,10 @@
   .balao {
     position: absolute;
     bottom: 10px;
-    top: 680px;
+    top: 650px;
     left: 1px;
     width: 408px;
-    height: 80px;
+    height: 85px;
     border-radius: 0px 0px 20px 20px;
   }
 
@@ -55,7 +57,7 @@
   }
 
   #attribution {
-    top: 765px;
+    top: 750px;
     left: 70px;
   }
 }
@@ -63,11 +65,12 @@
 @media (max-width: 375px) {
   main {
     width: 340px;
-    height: 660px;
+    height: 685px;
   }
 
   #img-lateral {
     width: 340px;
+    height: 45vh;
   }
 
   .container-informacao {
@@ -81,15 +84,23 @@
   }
 
   .container-info-button {
-    width: 320px;
-    margin-top: 10px;
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
   }
 
   .balao {
     bottom: 10px;
-    top: 580px;
+    top: 595px;
     left: 1px;
     width: 310px;
-    height: 80px;
+    height: 90px;
+  }
+
+  #attribution {
+    top: 700px;
+    left: 20px;
   }
 }
